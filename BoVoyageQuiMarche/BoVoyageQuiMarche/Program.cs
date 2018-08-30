@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Configuration;
 using System.Data.Entity;
+using BoVoyageQuiMarche.Services;
 
 namespace BoVoyageQuiMarche
 {
@@ -15,7 +16,7 @@ namespace BoVoyageQuiMarche
             bool continuer = true;
             while (continuer)
             {
-                var date = DateTime.Now;
+               // var date = DateTime.Now; Ajout de la date
                 var choixMenuPrincipal = MenuPrincipal();
                 switch (choixMenuPrincipal)
                 {
@@ -113,8 +114,39 @@ namespace BoVoyageQuiMarche
             return Console.ReadLine();
         }
 
+        private static void AfficherDossiersReservation()
+        {
+            Console.WriteLine();
+            Console.WriteLine("> Dossiers :");
 
+            var servicedossier = new ServiceReservation();//aporter correction**
+            var dossier = serviceVoiture.ListerMarques();
+            foreach (var marque in marques)
+            {
+                Console.Write($"{marque.Nom} ({marque.Id})");
+                Console.WriteLine($" :{marque.Modeles.Count} modèle(s)");//*****
+            }
+        }
 
+        private static void SupprimerReservation()
+        {
+            Console.WriteLine();
+            Console.WriteLine(">SUPPRESSION D'UNE RESERVATION");
+
+            DossierReservation dossier = ChoisirDossier();
+
+            var serviceResa = new ServiceReservation();
+            serviceResa.SupprimerDossierReservation(dossier);
+        }
+
+        private static DossierReservation ChoisirDossier()
+        {
+            Console.WriteLine("Choisissez votre numero de dossier");
+            var idDossier = int.Parse(Console.ReadLine());
+
+            var serviceReservation = new ServiceReservation();
+            return serviceReservation.GetDossier(idDossier);
+        }
 
     }
 }
