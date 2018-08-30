@@ -58,9 +58,9 @@
         {
             using (var contexte = new Contexte())
             {
-                return contexte.IdDestination // recup les bonnes info de la table
-                    .Include(x => x.adapter)//adapter
-                    .OrderBy(x => x.Nom).ToList();
+                return contexte.IdDestination
+                    .Select(Pays => Pays.adapter)//a valider
+                    .OrderBy(Continent => Continent.Afrique).ToList();// adapter le pays si necessaire
             }
         }
 
@@ -69,8 +69,8 @@
             using (var contexte = new Contexte())
             {
                 return contexte.Destination
-                    .Include(x => x.adapter)// adapter
-                    .Single(x => x.Id == idDestination);
+                    .Include(x => x.adapter)// adapter toujours...
+                    .Single(x => x.Id == idDestination); // pareil...
             }
         }
     }
