@@ -15,7 +15,7 @@ namespace BoVoyageQuiMarche
             bool continuer = true;
             while (continuer)
             {
-               // var date = DateTime.Now; Ajout de la date
+                var date = DateTime.Now;
                 var choixMenuPrincipal = MenuPrincipal();
                 switch (choixMenuPrincipal)
                 {

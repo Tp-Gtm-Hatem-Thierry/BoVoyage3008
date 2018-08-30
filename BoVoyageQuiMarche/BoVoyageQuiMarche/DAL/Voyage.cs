@@ -4,6 +4,7 @@
     {
         public void Id(Id id)
         {
+            //var date = DateTime.Now; // Affichage de la date
             using (var contexte = new Contexte())
             {
                 contexte.Id.Add(id);

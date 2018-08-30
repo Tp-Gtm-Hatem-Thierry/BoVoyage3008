@@ -5,6 +5,7 @@ public class ServiceVoyage
 {
             public void VosVoyages(VosVoyages vosVoyages)
             {
+               //var date = DateTime.Now; // Affichage de la date
                 using (var contexte = new Contexte())
                 {
                     contexte.Id.Add(vosVoyages); // je pense qu'il faut adapter au formul sql
