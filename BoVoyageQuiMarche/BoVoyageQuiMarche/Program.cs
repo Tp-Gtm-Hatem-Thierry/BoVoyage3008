@@ -13,8 +13,8 @@ namespace BoVoyageQuiMarche
             bool continuer = true;
             while (continuer)
             {
-                var choix1 = MenuPrincipal();
-                switch (choix1)
+                var choixMenuPrincipal = MenuPrincipal();
+                switch (choixMenuPrincipal)
                 {
                     case "1":
                         bool continuer2 = true;
@@ -22,8 +22,8 @@ namespace BoVoyageQuiMarche
                         while (continuer2)
                         {
 
-                            var choix2 = MenuVoyage();
-                            switch (choix2)
+                            var choixMenuVoyage = MenuVoyage();
+                            switch (choixMenuVoyage)
                             {
                                 case "1":
 
@@ -45,8 +45,8 @@ namespace BoVoyageQuiMarche
                         while (continuer3)
                         {
 
-                            var choix3 = MenuClient();
-                            switch (choix3)
+                            var choixMenuClient = MenuClient();
+                            switch (choixMenuClient)
                             {
                                 case "1":
                                     //ListeOffres();
