@@ -2,6 +2,15 @@
 {
     public class Destination
     {
+        public void Id(Id id)
+        {
+            using (var contexte = new Contexte())
+            {
+                contexte.Id.Add(id);
+                contexte.SaveChanges();
+            }
+        }
+
         public void Continent(Continent continent) // ajouter le namespace DAL
         {
             using (var contexte = new Contexte())
