@@ -10,7 +10,8 @@ namespace BoVoyage2
     {
         static void Main(string[] args)
         {
-
+            class abstract Personne();
+               Personne {get;set;} // faire un appel sur les classes client et participant pour obtenir les listes ensuite
         }
     }
 }
