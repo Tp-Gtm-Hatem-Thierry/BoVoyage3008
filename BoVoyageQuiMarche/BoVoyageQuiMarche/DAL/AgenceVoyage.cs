@@ -30,7 +30,7 @@
             }
         }
 
-        public Id GetDestination(int idId)
+        public Id GetId(int idId)
         {
             using (var contexte = new Contexte())
             {
