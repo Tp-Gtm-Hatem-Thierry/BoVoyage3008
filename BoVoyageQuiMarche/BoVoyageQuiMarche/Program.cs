@@ -13,6 +13,7 @@ namespace BoVoyageQuiMarche
             bool continuer = true;
             while (continuer)
             {
+               // var date = DateTime.Now; Ajout de la date
                 var choixMenuPrincipal = MenuPrincipal();
                 switch (choixMenuPrincipal)
                 {
@@ -23,7 +24,7 @@ namespace BoVoyageQuiMarche
                         {
 
                             var choixMenuVoyage = MenuVoyage();
-                            switch (choixMenuVoyage)
+                            switch (choixMenuVoyage) // modification du nom des variables (choixMenu...)
                             {
                                 case "1":
 
@@ -67,7 +68,6 @@ namespace BoVoyageQuiMarche
                     default:
                         Console.WriteLine("Choix invalide, veuiller recommencer");
                         Console.ReadKey();
-                        //continuer = true;
                         break;
                 }
             }
@@ -78,8 +78,8 @@ namespace BoVoyageQuiMarche
 
             Console.WriteLine("BoVoyage\n");
             Console.WriteLine("MENU PRINCIPAL\n");
-            Console.WriteLine("1. Gestionnaire de voyage\n");
-            Console.WriteLine("2. Gestionnaire clientèle\n");
+            Console.WriteLine("1. Nos listes de Voyages\n");
+            Console.WriteLine("2. Nos listes Clients\n");
             Console.WriteLine("3. Quitter BoVoyage");
             Console.Write("\nVotre choix : ");
 
@@ -89,8 +89,8 @@ namespace BoVoyageQuiMarche
         static string MenuVoyage()
         {
 
-            Console.WriteLine("Gestionnaire Voyage\n\n");
-            Console.WriteLine("1. Liste des offres\n");
+            Console.WriteLine("Gestion de nos offres voyage\n\n");
+            Console.WriteLine("1. Liste de nos offres\n");
             Console.WriteLine("2. Ajouter une offre\n");
             Console.WriteLine("3. Supprimer une offre\n");
             Console.WriteLine("4. Retour");
@@ -102,9 +102,9 @@ namespace BoVoyageQuiMarche
         static string MenuClient()
         {
 
-            Console.WriteLine("Gestionnaire Clientèle\n\n");
+            Console.WriteLine("Gestion de nos clients\n\n");
             Console.WriteLine("1. Nouvelles reservations\n");
-            Console.WriteLine("2. Liste Clients\n");
+            Console.WriteLine("2. Liste de nos Clients\n");
             Console.WriteLine("3. Campagne emailing\n");
             Console.WriteLine("4. Retour");
 
