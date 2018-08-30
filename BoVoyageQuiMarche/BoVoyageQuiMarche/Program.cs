@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Configuration;
+using System.Data.Entity;
 
 namespace BoVoyageQuiMarche
 {
@@ -110,6 +112,7 @@ namespace BoVoyageQuiMarche
 
             return Console.ReadLine();
         }
+
 
 
 
