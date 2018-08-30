@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D645E0FE-12A0-46DF-B373-3C44645EABCD}</ProjectGuid>
+    <ProjectGuid>{F68200D5-C3CA-4836-B89A-30978F933FA9}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>BoVoyage2</RootNamespace>
-    <AssemblyName>BoVoyage2</AssemblyName>
+    <RootNamespace>BoVoyageQuiMarche</RootNamespace>
+    <AssemblyName>BoVoyageQuiMarche</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,11 +33,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="BoVoyage.Framework.UI">
-      <HintPath>_Lib\BoVoyage.Framework.UI.dll</HintPath>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,14 +52,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Services\Contexte.cs" />
+    <Compile Include="DAL\AgenceVoyage.cs" />
+    <Compile Include="DAL\Assurance.cs" />
+    <Compile Include="DAL\Personne.cs" />
+    <Compile Include="DAL\Client.cs" />
+    <Compile Include="DAL\Destination.cs" />
+    <Compile Include="DAL\DossierReservation.cs" />
+    <Compile Include="DAL\Participant.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DAL\Voyage.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="_Lib\" />
+    <Folder Include="Business\" />
+    <Folder Include="Entites\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
