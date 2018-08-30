@@ -52,7 +52,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DAL\Contexte.cs" />
+    <Compile Include="Services\Contexte.cs" />
     <Compile Include="DAL\AgenceVoyage.cs" />
     <Compile Include="DAL\Assurance.cs" />
     <Compile Include="DAL\Personne.cs" />
@@ -71,7 +71,6 @@
   <ItemGroup>
     <Folder Include="Business\" />
     <Folder Include="Entites\" />
-    <Folder Include="Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
