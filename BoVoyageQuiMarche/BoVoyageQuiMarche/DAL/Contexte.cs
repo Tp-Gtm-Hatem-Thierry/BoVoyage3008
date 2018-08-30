@@ -1,4 +1,5 @@
 ﻿using System.Data.Entity;
+
 namespace BoVoyageQuiMarche
 {
     internal class Contexte : DbContext
