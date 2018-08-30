@@ -10,7 +10,6 @@
                 contexte.SaveChanges();
             }
         }
-
         public void DateAller(DateAller dateAller) // ajouter le namespace DAL
         {
             using (var contexte = new Contexte())
@@ -19,7 +18,6 @@
                 contexte.SaveChanges();
             }
         }
-
         public void DateRetour(DateRetour dateRetour)
         {
             using (var contexte = new Contexte())
@@ -29,7 +27,6 @@
                 contexte.SaveChanges();
             }
         }
-
         public void PlacesDisponibles(PlacesDisponibles placesDisponibles)
         {
             using (var contexte = new Contexte())
@@ -38,7 +35,7 @@
                 contexte.SaveChanges();
             }
         }
-         public void PrixParPersonne(PrixParPersonne prixParPersonne)
+        public void PrixParPersonne(PrixParPersonne prixParPersonne)
         {
             using (var contexte = new Contexte())
             {
@@ -46,7 +43,7 @@
                 contexte.SaveChanges();
             }
         }
-         public void IdAgenceVoyage(IdAgenceVoyage idAgenceVoyage) // verif si nommage correct
+        public void IdAgenceVoyage(IdAgenceVoyage idAgenceVoyage) // verif si nommage correct
         {
             using (var contexte = new Contexte())
             {
@@ -63,7 +60,6 @@
                     .OrderBy(Continent => Continent.Afrique).ToList();// adapter le pays si necessaire
             }
         }
-
         public Destination GetDestination(int idDestination)
         {
             using (var contexte = new Contexte())
