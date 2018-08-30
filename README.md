@@ -1,13 +1,16 @@
 # BoVoyage3008
 Projet BoVoyage, seconde TP
-//  A rédiger
+//  Avant fin de projet, rediger un resumer de ce que peux faire de programme
+
 // Pour l'acces au site...
-// Creation des tableaux BD : 8
-// Creation des Tables principales	 BD : via Sql serveur Management
-// Creation des tables suplémentaire pour le Menu :
-// Classe Program complété avec les classes de gestion des menus
-// classe Context : ok
-Voir le dox entites de Voiture du proj prof
+-- Creation des tableaux BD
+-- Creation des Tables principales BD : via Sql serveur Management
+// Creation des tables suplÃ©mentaire pour le Menu :
+-- classe Context : ok
+
+
+////
+// Voir le dox entites de Voiture du proj prof
 ////
 To do : faire une classe "ServiceVoyage" pour une methode qui affichera
 	1 voyage
@@ -16,7 +19,7 @@ To do : faire une classe "ServiceVoyage" pour une methode qui affichera
 
 	cf base de donnee sinon formule du genre :
 
-	Seletc ud From Voyages Where id = voyage n2 avec l'agc et la destination associé.
+	Seletc ud From Voyages Where id = voyage n2 avec l'agc et la destination associÃ©.
 	idem pour Destination,
 	idem pour Ages,
 
