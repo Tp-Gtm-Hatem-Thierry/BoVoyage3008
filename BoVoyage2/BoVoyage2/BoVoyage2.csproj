@@ -51,6 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="BD\BoVoyages2.bacpac" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="_Lib\" />
