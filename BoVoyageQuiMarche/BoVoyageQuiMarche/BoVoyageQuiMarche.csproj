@@ -52,7 +52,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Services\Contexte.cs" />
+    <Compile Include="XServices\Contexte.cs" />
     <Compile Include="DAL\AgenceVoyage.cs" />
     <Compile Include="DAL\Assurance.cs" />
     <Compile Include="DAL\Personne.cs" />
