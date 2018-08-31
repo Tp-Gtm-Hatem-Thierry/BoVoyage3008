@@ -53,16 +53,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAL\Contexte.cs" />
-    <Compile Include="DAL\AgenceVoyage.cs" />
-    <Compile Include="DAL\Assurance.cs" />
-    <Compile Include="DAL\Personne.cs" />
-    <Compile Include="DAL\Client.cs" />
-    <Compile Include="DAL\Destination.cs" />
-    <Compile Include="DAL\DossierReservation.cs" />
-    <Compile Include="DAL\Participant.cs" />
+    <Compile Include="Entites\AgenceVoyage.cs" />
+    <Compile Include="Entites\Assurance.cs" />
+    <Compile Include="Entites\Personne.cs" />
+    <Compile Include="Entites\Client.cs" />
+    <Compile Include="Entites\Destination.cs" />
+    <Compile Include="Entites\DossierReservation.cs" />
+    <Compile Include="Entites\Participant.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="DAL\Voyage.cs" />
+    <Compile Include="Entites\Voyage.cs" />
+    <Compile Include="Services\ServiceDossier.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -70,8 +71,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Business\" />
-    <Folder Include="Entites\" />
-    <Folder Include="Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
