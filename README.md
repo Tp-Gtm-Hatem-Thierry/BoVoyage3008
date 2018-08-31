@@ -1,5 +1,8 @@
 # BoVoyage3008
 Projet BoVoyage, seconde TP
+
+ATTENTION - > projet final, suivre le lien : https://github.com/Projet2Hatem-Thierry/BoVoyageFinal
+
 //  Avant fin de projet, rediger un resumer de ce que peux faire de programme
 
 // Pour l'acces au site...
