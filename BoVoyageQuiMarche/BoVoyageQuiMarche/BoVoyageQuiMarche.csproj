@@ -52,7 +52,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="Services\Contexte.cs" />
     <Compile Include="DAL\AgenceVoyage.cs" />
     <Compile Include="DAL\Assurance.cs" />

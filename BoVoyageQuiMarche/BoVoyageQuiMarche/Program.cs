@@ -77,6 +77,8 @@ namespace BoVoyageQuiMarche
         }
         static string MenuPrincipal()
         {
+            //ex : Esthetisme.MiseEnFormeTexte("APPLICATION METIER DE BO VOYAGE\n\n", ConsoleColor.DarkCyan, centre: true);
+
             Console.Clear();
             {   // Pour le Fun § à intégrer si ca compile !
                 //Console.WriteLine("\nVotre identifiant qui est votre prenom, je vous pries");
