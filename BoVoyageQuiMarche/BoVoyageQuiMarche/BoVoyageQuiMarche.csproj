@@ -52,7 +52,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Services\Contexte.cs" />
+    <Compile Include="DAL\Contexte.cs" />
     <Compile Include="DAL\AgenceVoyage.cs" />
     <Compile Include="DAL\Assurance.cs" />
     <Compile Include="DAL\Personne.cs" />
@@ -62,7 +62,8 @@
     <Compile Include="DAL\Participant.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="DAL\Voyage.cs" />
+    <Compile Include="Entites\Voyage.cs" />
+    <Compile Include="Services\ServiceDossier.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -71,6 +72,7 @@
   <ItemGroup>
     <Folder Include="Business\" />
     <Folder Include="Entites\" />
+    <Folder Include="Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
